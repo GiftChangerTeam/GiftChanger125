@@ -33,19 +33,5 @@ public class GiftsDatabaseHelper extends SQLiteOpenHelper {
     }
 
 
-    public void updateGift(Gift gift) {
-        SQLiteDatabase db = getWritableDatabase();
 
-        ContentValues contentValues = new ContentValues();
-        contentValues.put("name", gift.getName());
-        contentValues.put("gift", gift.getGift());
-        contentValues.put("gender", gift.getGender());
-
-        String whereClause = "id = ?";
-        String[] whereArgs = {String.valueOf(gift.getId())};
-
-        db.update("gifts", contentValues, whereClause, whereArgs);
-
-        db.close();
-    }
 }

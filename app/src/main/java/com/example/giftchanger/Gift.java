@@ -37,17 +37,13 @@ public class Gift {
         return gender;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setGift(String gift) {
-        this.gift = gift;
-    }
+
 
     public void setAgeIds(List<Integer> ageIds) {
         this.ageIds = ageIds;

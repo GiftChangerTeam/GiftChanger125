@@ -60,12 +60,7 @@ public class GiftAdapter extends RecyclerView.Adapter<GiftAdapter.GiftViewHolder
         }
     }
 
-    public List<Gift> getGiftList() {
-        return giftList;
-    }
 
-    public void updateGiftList(List<Gift> updatedGiftList) {
-        this.giftList = updatedGiftList;
-        notifyDataSetChanged();
-    }
+
+
 }

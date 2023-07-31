@@ -414,29 +414,7 @@ public class ViewsActivity extends AppCompatActivity implements View.OnClickList
         }
     }
 
-    // Дополнительных методы для редактирования данных подарков
 
-    public void editGiftName(int position, String name) {
-        Gift gift = adapter.getGiftList().get(position);
-        gift.setName(name);
-        databaseHelper.updateGift(gift);
-        adapter.notifyItemChanged(position);
-    }
-
-    public void editGiftAge(int position, List<Integer> ageIds) {
-        Gift gift = adapter.getGiftList().get(position);
-        gift.setAgeIds(ageIds);
-        databaseHelper.updateGift(gift);
-        adapter.notifyItemChanged(position);
-    }
-
-
-    public void editGiftGender(int position, String gender) {
-        Gift gift = adapter.getGiftList().get(position);
-        gift.setGender(gender);
-        databaseHelper.updateGift(gift);
-        adapter.notifyItemChanged(position);
-    }
 }
 
 
