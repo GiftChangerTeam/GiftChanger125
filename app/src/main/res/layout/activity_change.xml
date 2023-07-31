@@ -61,8 +61,8 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="168dp"
-        android:layout_height="58dp"
+        android:layout_width="268dp"
+        android:layout_height="50dp"
         android:text="Продолжить"
         android:textColorLink="#000000"
         android:textSize="18sp"

@@ -53,6 +53,8 @@ public class GiftAdapter extends RecyclerView.Adapter<GiftAdapter.GiftViewHolder
 
         GiftViewHolder(@NonNull View itemView) {
             super(itemView);
+            textViewAge = itemView.findViewById(R.id.textViewAge);
+            textViewGender = itemView.findViewById(R.id.textViewGender);
             textViewGift = itemView.findViewById(R.id.textViewGift);
             textViewName = itemView.findViewById(R.id.textViewName);
         }
